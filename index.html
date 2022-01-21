@@ -97,12 +97,9 @@
         countDown();
         let startCountDown = setInterval(countDown,1000);
         function startSpin(){
-            // for (let i=1;i<=3;i++){
-            //     $('#items_'+i).attr('src',arrImg[Math.floor((Math.random() * 5))]);
-            // }
-            $('#items_1').attr('src',arrImg[Math.floor((Math.random() * 5))]);
-            $('#items_2').attr('src',arrImg[Math.floor((Math.random() * 5))]);
-            $('#items_3').attr('src',arrImg[Math.floor((Math.random() * 5))]);
+            for (let i=1;i<=3;i++){
+                $('#items_'+i).attr('src',arrImg[Math.floor((Math.random() * 5))]);
+            }
         }
         const start = setInterval(startSpin, 50);
         function stopSpin() {
